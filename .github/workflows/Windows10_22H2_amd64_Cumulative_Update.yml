@@ -6,6 +6,7 @@ on: workflow_dispatch
 env:
   Build_VERSION: '19045.3208'
   FILE_NAME: Windows10_22H2_amd64_Cumulative_Update
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   Windows10_22H2_amd64_Cumulative_Update:
