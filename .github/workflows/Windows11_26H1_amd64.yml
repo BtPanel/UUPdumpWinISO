@@ -10,7 +10,8 @@ env:
 jobs:
   Windows11_26H1_amd64:
     runs-on: windows-latest
-
+    permissions:
+      contents: write 
     steps:
 
     # 检出本仓库
