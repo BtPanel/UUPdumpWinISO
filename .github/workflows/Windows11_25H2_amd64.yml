@@ -4,7 +4,7 @@ on: workflow_dispatch
 #on: [push, pull_request]
 
 env:
-  Build_VERSION: '26200.8313'
+  Build_VERSION: '26200.8328'
   FILE_NAME: Windows11_25H2_amd64
 
 jobs:
@@ -49,5 +49,5 @@ jobs:
       uses: softprops/action-gh-release@v2
       with:
         tag_name: ${{env.FILE_NAME}}-${{env.Build_VERSION}}
-        release_name: ${{env.FILE_NAME}}-${{env.Build_VERSION}}
+        name: ${{env.FILE_NAME}}-${{env.Build_VERSION}}
         files: ${{env.FILE_NAME}}-${{env.Build_VERSION}}.7z*
