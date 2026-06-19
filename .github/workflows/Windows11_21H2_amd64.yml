@@ -1,14 +1,14 @@
-name: Windows11_23H2_amd64
+name: Windows11_21H2_amd64
 
 on: workflow_dispatch
 #on: [push, pull_request]
 
 env:
-  Build_VERSION: '22631.4169'
-  FILE_NAME: Windows11_23H2_amd64
+  Build_VERSION: '22000.3260'
+  FILE_NAME: Windows11_21H2_amd64
 
 jobs:
-  Windows11_23H2_amd64:
+  Windows11_21H2_amd64:
     runs-on: windows-latest
     permissions:
       contents: write 
